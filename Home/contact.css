@@ -1,0 +1,283 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    margin-right: 5px;
+    height: 50px;
+}
+nav a{
+    border-radius: 20px;
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    transition: 0.5s;
+}
+
+nav a:hover{
+    transition: ease-in-out;
+    color: black;
+    background-color: lightgray;   
+transition: 0.5s;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    margin-right: auto;
+}
+.contact{
+    background: rgba(2, 103, 255, 0.212);
+}
+.contact:hover{
+    background: rgba(2, 103, 255, 0.212);
+    color: white;
+
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+@media(max-width: 900px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+
+@media(max-width: 400px){
+.sidebar{
+    width: 100%;
+}
+}
+
+
+.container{
+    width: 92%;
+    margin: auto;
+    height: 100%;
+    /* border: 2px solid yellow; */
+    overflow:hidden;
+    display: flex;
+    justify-content: center; /*Pag may prob try mo alisin toh*/
+}
+
+
+footer{
+    margin-top: 100px;
+    color: white;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.466);  /* Black color with 50% transparency */
+    padding: 20px;
+
+}
+.foot{
+    display: flex;
+    flex-basis: 100%;
+    font-size: 12px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.flexbox1_container{
+    margin: 20px;
+    min-height: 400px; /* size nung box */
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(b2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    border-radius: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    max-width: 1000px;
+
+    /* Perspective effect */
+    transform: rotateX(2deg) rotateY(2deg); /* Slight rotation for 3D effect */
+    
+    /* Smooth transition for hover effects */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+
+/* Optional: Add hover effect for a more dynamic 3D experience */
+.flexbox1_container:hover {
+    transform: rotateX(5deg) rotateY(5deg) scale(1.05) ; /* More rotation and slight scaling */
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
+    border-radius: 50px;
+}
+.flexboxx{
+        margin: 10px 30px 40px 30px;
+        background-color: aqua;
+        padding: 10px;
+        box-shadow: 0px 4px 22px 0px rgb(194, 244, 255 / 27%);
+        transition: .3s;
+        border-radius: 60px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(d1.jpg);
+        width: 280px;
+        min-height: 350px;
+        height: 380px;
+    }   
+
+    
+    .flexboxx:hover {
+        transform: translateY(-10px);
+       
+        background: #ffffff80;
+    .plan-title{
+        color: black;
+    }
+    .plan-price{
+        color: black;
+    }
+    .plan-features{
+        color: black;
+    }
+    .plan-button{
+        color: black;
+    }
+      
+    }
+
+     .box1{
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+ 
+        gap: 20px;
+     
+    }
+    .box2{
+        justify-content: center;
+        justify-items: center;
+        
+    }
+    .contact-inputs{
+        width: 240px;
+        height: 50px;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        color: #010607;
+        text-align: center;
+    }
+    .contact-inputs:focus{
+        border: 2px solis blue;
+    }
+    .contact-inputs::placeholder ,.messageArea::placeholder{
+        border: 2px solis rgb(195, 0, 255);
+        text-align: center;
+        padding-top: 50px;
+        color: black;
+    }
+    button{
+        display: flex;
+        padding: 15px;
+        font-size: 16px;
+        color: rgb(235, 201, 201);
+        border-radius: 50px;
+        background: linear-gradient(270deg, rgba(0, 0, 255, 0.164), rgba(216, 0, 216, 0.24));
+        cursor: pointer;
+        margin-left: 60px;
+        margin-top: 10px;
+        width: 130px;
+        justify-content: center;
+        border: none;
+    
+    }
+    button:hover{
+        color: #40d8fd;
+        background: linear-gradient(270deg, rgba(52, 247, 3, 0.164), rgba(136, 255, 0, 0.24));
+    }
+    .messageArea{
+        height: 140px;
+        width: 240px;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        text-align: center;
+        color: #40d8fd;
+        padding: 10px;
+    }
+    h1{
+text-align: center;
+color: whitesmoke;
+    }
+
+    .icon{
+        height: 50px;
+        width: 50px;
+        margin: 10px;
+        transition: 0.5s;
+        border-radius: 52px;
+
+    }
+    .icon:hover{
+        transition: ease-in-out;
+       height: 60px;
+       width: 60px;
+      transition: 0.5s;
+      background-color: pink;
+    }
+    h4{
+        font-size: 12px;
+    }
+    .hr{
+        width: 230px;
+    }
+
+    .shortMessage{
+        display: flex;
+        font-size: 12px;
+        margin: 10px;
+        color: whitesmoke;
+        text-align: center;
+    }

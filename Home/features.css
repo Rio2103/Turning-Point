@@ -1,0 +1,430 @@
+/* Nav css start */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    margin-right: 5px;
+    height: 50px;
+    /* font-weight: bolder; */
+}
+nav a{
+    border-radius: 20px;
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    transition: 0.5s;
+}
+
+nav a:hover{
+    transition: ease-in-out;
+    color: black;
+    background-color: lightgray;   
+transition: 0.5s;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    margin-right: auto;
+}
+.features{
+    background: rgba(2, 103, 255, 0.212);
+}
+.features:hover{
+    background: rgba(2, 103, 255, 0.212);
+    color: white;
+
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+
+
+.container{
+    width: 92%;
+    margin: auto;
+    height: 100%;
+    /* border: 2px solid yellow; */
+    overflow:hidden;
+    display: flex;
+    justify-content: center; /*Pag may prob try mo alisin toh*/
+}
+
+
+footer{
+    margin-top: 100px;
+    color: white;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.466);  /* Black color with 50% transparency */
+    padding: 20px;
+
+}
+.foot{
+    display: flex;
+    flex-basis: 100%;
+    font-size: 12px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Nav css end */
+
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    /* background: pink; */
+    /* width: auto;
+    height: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;;
+    
+    
+}
+
+.containerr {
+      width: 100%;
+    height: 100%;
+    /* background: black; */
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    /* ^ eto yung sa media taena */
+    margin: 10px;
+
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 10px 10px;
+    /* spacing nung mga card pag asa phone */
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}   
+
+.card:hover{
+        transform: translateY(-20px);
+       
+        background: #ffffff80;
+    .plan-title{
+        color: black;
+}}
+
+
+.card > .row > .icon {
+    /* background: #223; */
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+.row{
+    min-width: 20%;
+}
+.description{
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(b3.jpg);
+    border-radius: 30px;
+}
+
+.description p {
+    color: #b0b0ba;
+    padding-top: 5px;
+    align-self: center;
+}
+
+.description h4 {
+    align-self: center;
+    text-transform: uppercase;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+    min-height: 200px;
+    opacity: 100%;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card{
+    opacity: 50%;
+}
+
+.card[for="c1"] {
+    background-image: url('s5.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card[for="c2"] {
+    background-image: url('s2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card[for="c3"] {
+    background-image: url('s3.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+.card[for="c4"] {
+    background-image: url('s4.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+p:hover{
+  text-decoration: underline;
+  background: linear-gradient(to top, rgba(62, 23, 168, 0.555) 50%,rgba(62, 23, 168, 0.555) 50%), url(d1.jpg);
+  border-radius: 20px;
+}
+
+.ss{
+  color: white;
+  margin: 10px;
+}
+
+.cut{
+    justify-content: center;
+    justify-items: center;
+  color: white;
+  margin: 20px;
+}
+.cut h1{
+    color: pink;
+    text-align: center;
+    /* kapag gusto mo align yung text */
+}
+
+
+
+
+.containere {
+    /* background: pink; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    margin-inline: 1.5rem;
+    padding-block: 5rem;
+  }
+  
+  .card__container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card__article {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card__img {
+    width: 328px;
+    border-radius: 1.5rem;
+    height: 200px;
+  }
+  
+  .card__data {
+    width: 280px;
+    background-color:rgba(0, 0, 0, 0.664);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -9rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+    color: white;
+  }
+  
+  .card__description {
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: .25rem;
+  }
+  
+  .card__title {
+    font-size: var(--h2-font-size);
+    font-weight: 500;
+    color: var(--title-color);
+    margin-bottom: .75rem;
+  }
+  
+  .card__button {
+    text-decoration: none;
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    color: var(--first-color);
+  }
+  
+  .card__button:hover {
+    text-decoration: underline;
+  }
+  
+  /* Naming animations in hover */
+  .card__article:hover .card__data {
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+  }
+  
+  .card__article:hover {
+    animation: remove-overflow 2s forwards;
+  }
+  
+  .card__article:not(:hover) {
+    animation: show-overflow 2s forwards;
+  }
+  
+  .card__article:not(:hover) .card__data {
+    animation: remove-data 1s forwards;
+  }
+  
+  /* Card animation */
+  @keyframes show-data {
+    50% {
+      transform: translateY(-10rem);
+    }
+    100% {
+      transform: translateY(-7rem);
+    }
+  }
+  
+  @keyframes remove-overflow {
+    to {
+      overflow: initial;
+    }
+  }
+  
+  @keyframes remove-data {
+    0% {
+      transform: translateY(-7rem);
+    }
+    50% {
+      transform: translateY(-10rem);
+    }
+    100% {
+      transform: translateY(.5rem);
+    }
+  }
+  
+  @keyframes show-overflow {
+    0% {
+      overflow: initial;
+      pointer-events: none;
+    }
+    50% {
+      overflow: hidden;
+    }
+  }
+ 
+  @media(max-width: 900px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+
+@media(max-width: 400px){
+.sidebar{
+    width: 100%;
+}
+}

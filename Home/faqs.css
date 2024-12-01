@@ -1,0 +1,211 @@
+/* Nav css start */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    margin-right: 5px;
+    height: 50px;
+}
+nav a{
+    border-radius: 20px;
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    transition: 0.5s;
+}
+
+nav a:hover{
+    transition: ease-in-out;
+    color: black;
+    background-color: lightgray;   
+transition: 0.5s;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    margin-right: auto;
+}
+.faqs{
+    background: rgba(2, 103, 255, 0.212);
+}
+.faqs:hover{
+    background: rgba(2, 103, 255, 0.212);
+    color: white;
+
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+
+
+.container{
+    width: 92%;
+    margin: auto;
+    height: 100%;
+    /* border: 2px solid yellow; */
+    overflow:hidden;
+    display: flex;
+    justify-content: center; /*Pag may prob try mo alisin toh*/
+}
+
+
+footer{
+    margin-top: 100px;
+    color: white;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.466);  /* Black color with 50% transparency */
+    padding: 20px;
+
+}
+.foot{
+    display: flex;
+    flex-basis: 100%;
+    font-size: 12px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Nav css end */
+
+.questions-container{
+    /* size nung faqs box */
+    max-width: 500px; 
+    margin: 0 auto;
+
+}
+
+.question{
+    border-bottom: 1px solid #fff;
+   
+}
+.question button{
+    border-radius: 30px;
+    width: 500px;
+    background-color: #0000007e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    border:none;
+    outline: none;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 18px;
+    /* margin-bottom: 10px; */
+
+}
+.question p{
+    color: white;
+    font-size: 18px;
+    max-height: 0;
+    opacity: 0;
+    line-height: 1.5;
+    overflow: hidden;
+    transition: all 0.6s ease;
+}
+
+
+/*add this class when click*/
+.question p.show{
+    max-height: 200px; 
+    opacity: 1;
+    padding:0px 15px 30px 15px;
+}
+
+.title{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 40px;
+    
+}
+.fcontainer{
+    min-height: 500px; /* size nung box */
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+}
+
+.flexboxx{    
+    margin: 20px 70px 70px 70px;
+
+   
+}
+.tplogofaqs{
+    height: 400px;
+    width: 400px;
+    opacity: 70%;
+}
+
+@media(max-width: 900px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+    .question button{
+        border-radius: 30px;
+        width: auto;}
+}
+
+@media(max-width: 400px){
+.sidebar{
+    width: 100%;
+}
+.question button{
+    border-radius: 30px;
+    width: auto;}
+}
